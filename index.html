@@ -4,20 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather app</title>
   </head>
   <body>
     <div class="container">
-      <h1>
-        This is the Vanilla weather app.
-      </h1>
+      <div class="card" style="width: 50rem">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Search City.."
+          aria-label="default input example"
+        />
+        <input class="btn btn-primary" type="submit" value="Submit" />
+        <div class="card-body">
+          <h1 class="city">Wembley</h1>
+          <ul>
+            <li>Wednesday 11th Jan 11:37</li>
+            <li>Cloudy</li>
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Cloudy"
+                />
+                9˚C
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>Precipitation: 18%</li>
+                  <li>Humidity: 68%</li>
+                  <li>Wind: 21 mph</li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-2">
+              <ul>
+                <li>Wed</li>
+                <li>
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+                    alt="Rainy"
+                  />
+                </li>
+                <li>11˚</li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul>
+                <li>Thu</li>
+                <li>
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+                    alt="Rainy"
+                  />
+                </li>
+                <li>12˚</li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul>
+                <li>Fri</li>
+                <li>
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png"
+                    alt="Cloudy"
+                  />
+                </li>
+                <li>9˚</li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul>
+                <li>Sat</li>
+                <li>
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png"
+                    alt="Slight-sun"
+                  />
+                </li>
+                <li>13˚</li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul>
+                <li>Sun</li>
+                <li>
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png"
+                    alt="Slight-sun"
+                  />
+                </li>
+                <li>14˚</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/avr87/Vanilla-weather-app" target="_blank"
+        >Open-source code</a
+      >
+      by Anna van Ruiten
     </div>
     <script src="src/app.js"></script>
   </body>
