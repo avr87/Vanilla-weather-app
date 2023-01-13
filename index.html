@@ -14,8 +14,10 @@
     <title>Weather app</title>
   </head>
   <body>
+    <div class="weather-app-wrapper">
     <div class="container">
-      <div class="card" style="width: 50rem">
+      
+      <div class="card" >
         <div class="row">
           <div class="col-md-6">
         <input
@@ -32,15 +34,19 @@
           
             <div class="row info">
               <div class="col-md-6" >
+                <div class="clearfix weather-temperature">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                   alt="Cloudy"
+                  class="float-left"
                 />
-                9˚C
+                <strong> 9</strong> <small>˚C | <a href="#" id="fahrenheit" >˚F</a></small>
+                </div>
                 <ul>
-            <li>Wednesday 11th Jan 11:37</li>
+            <li>Wednesday 11:37</li>
             <li>Cloudy</li>
             </ul>
+              
               </div>
               <div class="col-md-6">
                 <br />
@@ -122,6 +128,7 @@
         >Open-source code</a
       >
       by Anna van Ruiten
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>

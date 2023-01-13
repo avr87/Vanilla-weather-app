@@ -1,12 +1,20 @@
-.card {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+}
+
+.card {
+  margin-bottom: 20px;
   padding: 20px;
   border: 1px solid #dadde1;
+  border-radius: 5px;
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
   color: #70757a;
   font-size: 38px;
   font-weight: 100;
@@ -16,19 +24,46 @@ h1 {
   margin-bottom: 0;
 }
 
-.info {
-  font-family: Arial, Helvetica, sans-serif;
-
-  color: #70757a;
-  list-style: none;
-  font-weight: 100;
-  font-size: 16px;
-  line-height: 19px;
-}
 ul {
   margin: 0;
   padding: 0;
 }
 li {
   list-style: none;
+}
+
+.weather-temperature img {
+  margin-right: 10px;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  vertical-align: top;
+}
+.weather-temperature strong {
+  color: black;
+  display: inline;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+  vertical-align: top;
+}
+
+.weather-temperature small {
+  color: black;
+  display: inline;
+  line-height: 22px;
+
+  font-size: 16px;
+
+  padding-left: 2px;
+  vertical-align: text-top;
+}
+
+#fahrenheit {
+  text-decoration: none;
+}
+
+.info {
+  color: #70757a;
+  font-size: 13px;
 }
