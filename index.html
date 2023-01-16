@@ -17,20 +17,20 @@
   <body>
     <div class="weather-app-wrapper">
     <div class="container">
-      
       <div class="card" >
-        <div class="row">
-          <div class="col-md-6">
-        <input
-          class="form-control"
-          type="text"
-          placeholder="Search City.."
-          aria-label="default input example"
-        />
-        <input class="btn btn-primary" type="submit" value="Submit" />
-        </div>
-        </div>
+       
         <div class="card-body">
+            <form id="search-form" class="mb-4">
+        <div class="row">
+        <div class="col-9">
+          <input type="search" placeholder="Search city...." class="form-control" id="city-input"/>
+       </div>
+      <div class="col-3">
+          <input class="btn btn-primary" type="submit" value="Search" />
+       </div>
+        </div>
+    </form>
+          
           <h1 id="city">Wembley</h1>
           
             <div class="row info">
