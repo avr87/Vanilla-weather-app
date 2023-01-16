@@ -28,12 +28,18 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#windspeed");
   let humidityElement = document.querySelector("#humidity");
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = response.data.temperature.humidity;
   dateElement.innerHTML = formatDate(response.data.time * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png`
+  );
+  iconElement.setAttribute("alt", response.data.condition.description);
 }
 
 let apiKey = "524437caf2bf7e4a9413b557e3t8od0a";
