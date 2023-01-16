@@ -30,9 +30,11 @@ ul {
 }
 li {
   list-style: none;
-  text-transform: capitalize;
 }
 
+li::first-letter {
+  text-transform: capitalize;
+}
 .weather-temperature img {
   margin-right: 10px;
   display: inline-block;
