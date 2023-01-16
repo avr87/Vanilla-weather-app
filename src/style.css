@@ -62,11 +62,21 @@ li::first-letter {
   vertical-align: text-top;
 }
 
-#fahrenheit {
-  text-decoration: none;
-}
-
 .info {
   color: #70757a;
   font-size: 13px;
+}
+.fahrenheit {
+  text-decoration: none;
+}
+#celsius-link {
+  text-decoration: none;
+}
+.weather-temperature .active {
+  color: black;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
