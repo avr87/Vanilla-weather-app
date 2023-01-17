@@ -16,39 +16,43 @@
   </head>
   <body>
     <div class="weather-app-wrapper">
-    <div class="container">
-      <div class="card" >
-       
-        <div class="card-body">
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
             <form id="search-form" class="mb-4">
-        <div class="row">
-        <div class="col-9">
-          <input type="search" placeholder="Search city...." class="form-control" id="city-input"/>
-       </div>
-      <div class="col-3">
-          <input class="btn btn-primary" type="submit" value="Search" />
-       </div>
-        </div>
-    </form>
-          
-          <h1 id="city">Wembley</h1>
-          
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    placeholder="Search city...."
+                    class="form-control"
+                    id="city-input"
+                  />
+                </div>
+                <div class="col-3">
+                  <input class="btn btn-primary" type="submit" value="Search" />
+                </div>
+              </div>
+            </form>
+
+            <h1 id="city">Wembley</h1>
+
             <div class="row info">
-              <div class="col-md-6" >
+              <div class="col-md-6">
                 <div class="clearfix weather-temperature">
-                <img
-                  src=""
-                  alt="Cloudy"
-                  class="float-left"
-                  id="icon"
-                />
-                <strong id="temperature"> 9</strong> <small> <a href="#" id="celsius-link" class="active">˚C</a> | <a href="#" id="fahrenheit-link" class="fahrenheit" >˚F</a></small>
+                  <img src="" alt="Cloudy" class="float-left" id="icon" />
+                  <strong id="temperature"> 9</strong>
+                  <small>
+                    <a href="#" id="celsius-link" class="active">˚C</a> |
+                    <a href="#" id="fahrenheit-link" class="fahrenheit"
+                      >˚F</a
+                    ></small
+                  >
                 </div>
                 <ul>
-            <li>Last updated: <span id="date"> Wednesday 11:37</span></li>
-            <li id="description">Cloudy</li>
-            </ul>
-              
+                  <li>Last updated: <span id="date"> Wednesday 11:37</span></li>
+                  <li id="description">Cloudy</li>
+                </ul>
               </div>
               <div class="col-md-6">
                 <br />
@@ -56,80 +60,31 @@
                 <ul>
                   <br />
                   <li>Humidity: <span id="humidity">68</span> %</li>
-                  <li>Wind: <span id="windspeed" >21</span> mph</li>
+                  <li>Wind: <span id="windspeed">21</span> mph</li>
                 </ul>
               </div>
             </div>
-          </ul>
-          <br />
-          <div class="row">
-            <div class="col-2">
-              <ul>
-                <li>Wed</li>
-                <li>
+
+            <br />
+            <div class="weather-forecast">
+              <div class="row">
+                <div class="col-2">
+                  <div class="weather-forecast-day">Wed</div>
                   <img
                     src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
                     alt="Rainy"
                   />
-                </li>
-                <li>11˚</li>
-              </ul>
-            </div>
-            <div class="col-2">
-              <ul>
-                <li>Thu</li>
-                <li>
-                  <img
-                    src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
-                    alt="Rainy"
-                  />
-                </li>
-                <li>12˚</li>
-              </ul>
-            </div>
-            <div class="col-2">
-              <ul>
-                <li>Fri</li>
-                <li>
-                  <img
-                    src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png"
-                    alt="Cloudy"
-                  />
-                </li>
-                <li>9˚</li>
-              </ul>
-            </div>
-            <div class="col-2">
-              <ul>
-                <li>Sat</li>
-                <li>
-                  <img
-                    src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png"
-                    alt="Slight-sun"
-                  />
-                </li>
-                <li>13˚</li>
-              </ul>
-            </div>
-            <div class="col-2">
-              <ul>
-                <li>Sun</li>
-                <li>
-                  <img
-                    src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png"
-                    alt="Slight-sun"
-                  />
-                </li>
-                <li>14˚</li>
-              </ul>
+                  <span class="weather-forecast-temperature-min">11˚</span>
+                  <span class="weather-forecast-temperature-max"> 13˚</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <a href="https://github.com/avr87/Vanilla-weather-app" target="_blank"
-        >Open-source code</a
-      >
-      by Anna van Ruiten
+        <a href="https://github.com/avr87/Vanilla-weather-app" target="_blank"
+          >Open-source code</a
+        >
+        by Anna van Ruiten
       </div>
     </div>
     <script src="src/app.js"></script>

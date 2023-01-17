@@ -32,7 +32,7 @@ li {
   list-style: none;
 }
 
-li::first-letter {
+li:first-letter {
   text-transform: capitalize;
 }
 .weather-temperature img {
@@ -79,4 +79,24 @@ li::first-letter {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-day {
+  color: black;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  font-size: 13px;
+  color: black;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-max {
+  font-size: 13px;
+  color: black;
 }
