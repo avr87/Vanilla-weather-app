@@ -62,9 +62,14 @@ li:first-letter {
   vertical-align: text-top;
 }
 
-.info {
+#information {
+  margin-top: 20px;
   color: #70757a;
   font-size: 13px;
+}
+
+#info {
+  text-align: right;
 }
 .fahrenheit {
   text-decoration: none;
@@ -81,9 +86,13 @@ li:first-letter {
   text-decoration: none;
 }
 
-.weather-forecast {
-  margin-top: 20px;
+#forecast {
+  margin-top: 30px;
   text-align: center;
+}
+#icon-forecast {
+  height: 60px;
+  width: 60px;
 }
 .weather-forecast-day {
   color: black;

@@ -50,6 +50,7 @@ function displayForecast(response) {
                       forecastDay.condition.icon
                     }.png"
                     alt="Rainy"
+                    id="icon-forecast"
                   />
                       <div class="weather-forecast-temperatures">
                   <span class="weather-forecast-temperature-min">${Math.round(
