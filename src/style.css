@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(155, 216, 250, 0.1);
 }
 
 .weather-app-wrapper {
@@ -11,7 +12,8 @@ body {
   margin-bottom: 20px;
   padding: 20px;
   border: 1px solid #dadde1;
-  border-radius: 5px;
+  border-radius: 50px;
+  box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.05);
 }
 
 h1 {
@@ -23,7 +25,15 @@ h1 {
 
   margin-bottom: 0;
 }
+#city-input {
+  border-radius: 50px;
+  background-color: rgba(155, 216, 250, 0.1);
+  border: none;
+}
 
+#search-button {
+  border-radius: 50px;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -108,4 +118,9 @@ li:first-letter {
 .weather-forecast-temperature-max {
   font-size: 13px;
   color: black;
+}
+
+#link-to-code {
+  font-size: 12px;
+  text-align: center;
 }
